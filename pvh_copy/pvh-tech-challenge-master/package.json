@@ -1,0 +1,59 @@
+{
+  "name": "pvh-tech-challenge",
+  "version": "1.0.0",
+  "description": "PVH Tech Challenge",
+  "main": "./node_modules/.bin/wdio",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^15.0.1",
+    "@wdio/allure-reporter": "^7.5.2",
+    "@wdio/appium-service": "^7.5.2",
+    "@wdio/cli": "^7.5.2",
+    "@wdio/cucumber-framework": "^7.5.2",
+    "@wdio/local-runner": "^7.5.2",
+    "@wdio/spec-reporter": "^7.5.2",
+    "allure-commandline": "^2.13.8",
+    "appium": "^1.20.2",
+    "chromedriver": "^90.0.0",
+    "husky": "^6.0.0",
+    "prettier": "2.2.1",
+    "pretty-quick": "^3.1.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "wdio-chromedriver-service": "^7.0.0",
+    "wdio-cucumber-reporter": "0.0.2",
+    "wdio-docker-service": "^3.1.2",
+    "webdriverio": "^7.5.2"
+  },
+  "scripts": {
+    "allure:history": "mkdir -p allure-report/history ./test/reports/allure-results/history && cp -a allure-report/history ./test/reports/allure-results/",
+    "allure-report": "node_modules/.bin/allure generate --clean ./test/reports/allure-results && allure open",
+    "test": "npm run allure:history && npx wdio run ./config/wdio.common.conf.ts",
+    "test:headless": "npm run allure:history && npx wdio run ./config/wdio.headless.conf.ts",
+    "prettier:format": "npx prettier --verbose --write .",
+    "prettier:check": "npx prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jctjavier/pvh-tech-challenge.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx pretty-quick --verbose --bail"
+    }
+  },
+  "keywords": [
+    "WDIO",
+    "WebdriverIO",
+    "Appium",
+    "Cucumber",
+    "PVH",
+    "TechChallenge"
+  ],
+  "author": "Joanne Javier (jctjavier)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jctjavier/pvh-tech-challenge/issues"
+  },
+  "homepage": "https://github.com/jctjavier/pvh-tech-challenge#readme"
+}

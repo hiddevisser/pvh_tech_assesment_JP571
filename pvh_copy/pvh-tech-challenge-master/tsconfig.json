@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"types": ["node", "webdriverio/sync", "webdriverio/async", "@wdio/cucumber-framework", "expect-webdriverio"],
+		"target": "es5",
+		"module": "commonjs",
+		"paths": {
+			"*": ["./*"],
+			"src/*": ["./src/*"]
+		},
+		"removeComments": true,
+		"noImplicitAny": true,
+		"strictPropertyInitialization": true,
+		"strictNullChecks": true
+	},
+	"include": ["./test/**/*.ts", "./test/**/**/*.ts"]
+}
