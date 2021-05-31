@@ -1,4 +1,4 @@
-# pvh_tech_assesment_JP571
+# pvh tech assessment jp571
 The technical assignment for PVH
 
 ```diff 

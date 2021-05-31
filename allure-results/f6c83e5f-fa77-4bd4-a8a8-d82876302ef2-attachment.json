@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "span[class=\"header__link account__icon header__link--name\"]"
+}
