@@ -9,7 +9,7 @@ const pages = {
     tommy: TommyPage
 }
 
-When(/^I login with (.*) and and (.*)$/, async function (username, password) {
+When(/^I login with (.*) and (.*)$/, async function (username, password) {
     await LoginPage.login(username,password)
 });
 

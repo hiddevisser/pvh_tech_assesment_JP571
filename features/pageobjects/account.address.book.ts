@@ -39,7 +39,7 @@ class AddressBook extends Page {
         return $('button[data-testid="address-delete-button"]');
     }
 
-    async verifyAddressBookDisplayed() {
+    async verifyAddressDisplayed() {
         await expect(this.headingSubtitleAddressBook).toHaveText(SUBTITLE_NL);
     }
 

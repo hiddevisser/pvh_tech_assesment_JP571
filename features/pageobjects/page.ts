@@ -10,7 +10,7 @@ export default class Page {
     */
     open (path: string) {
         browser.deleteCookies();
-        return browser.url(`https://nl.tommy.com/`)
+        // return browser.url(`https://nl.tommy.com/`)
+        return browser.url(path)
     }
-
 }

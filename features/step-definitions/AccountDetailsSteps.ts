@@ -11,11 +11,11 @@ Then(/^I should see a welcome message saying (.*)$/, async (message) => {
 });
 
 Then(/^I verify I am logged in$/, async () => {
-    await MyAccount.verifyMyAccountHeaderText();
+    await MyAccount.verifyMyAccountText();
 });
 
 Then(/^I navigate to my account$/, async () => {
-    await MyAccount.clickMyAccountHeaderText();
+    await MyAccount.clickMyAccountText();
     // await MyAccount.verifyMyAccountHeadings();
 });
 
@@ -25,23 +25,11 @@ Then(/^I navigate to address book$/, async () => {
 });
 
 Then(/^I verify I see my address book$/, async () => {
-    await AddressBook.verifyAddressBookDisplayed();
+    await AddressBook.verifyAddressDisplayed();
 });
 
 Then(/^I click add address$/, async () => {
     await AddressBook.clickAddAddress();
-});
-
-Then(/^I input and verify address was added$/, async () => {
-    const firstName = 'MyFirstName';
-    const lastName = 'MyLastName';
-    const street = 'Romeinlaan';
-    const houseNumber = '1';
-    const city = 'Amsterdam';
-    const zipcode = '1234 AB';
-
-    await AddressBook.submitAddress(firstName, lastName, street, houseNumber, city, zipcode);
-    await AddressBook.verifyAddressAndDelete(street);
 });
 
 Given(/^I close the newsletter popup$/, async function () {

@@ -5,7 +5,7 @@ Feature: Add address to address book
     Given I am starting the browser and navigate to the tommy website
       And I am closing the cookies pop-up by accepting them
       And I navigate to the login screen
-      And I login with <username> and and <password>
+      And I login with <username> and <password>
       And I should see a welcome message saying <message>
       And I navigate to my account
       And I close the newsletter popup

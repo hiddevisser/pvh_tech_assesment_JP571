@@ -19,11 +19,11 @@ class MyAccount extends Page {
         return $('button[class="newsletter__close button--close"]');
     }
 
-    async verifyMyAccountHeaderText() {
+    async verifyMyAccountText() {
         await expect(this.headerMyAccount).toHaveText(HEADER_TEXT_NL);
     }
 
-    async clickMyAccountHeaderText() {
+    async clickMyAccountText() {
         await (await this.headerMyAccount).click();
     }
 

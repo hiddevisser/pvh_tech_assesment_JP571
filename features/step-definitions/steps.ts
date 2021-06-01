@@ -19,5 +19,5 @@ Given(/^I am closing the cookies pop\-up by accepting them$/, async function () 
 });
 
 When(/^I navigate to the login screen$/, async function () {
-    await TommyPage.clickAanmelden();
+    await TommyPage.clickLogin();
 });

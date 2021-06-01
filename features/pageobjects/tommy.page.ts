@@ -8,17 +8,15 @@ class TommyPage extends Page {
     /**
      * define selectors using getter methods
      */
-
     btnCloseCookiesSelector: string = 'button[data-testid="close-button"]';
-    btnAanmeldenSelector: string = 'button[data-testid="sign-in-button"]';
-
+    btnLoginSelector: string = 'button[data-testid="sign-in-button"]';
 
     get btnCloseCookies() {
         return $(this.btnCloseCookiesSelector);
     }
 
-    get btnAanmelden(){
-        return $(this.btnAanmeldenSelector);
+    get btnLogin(){
+        return $(this.btnLoginSelector);
     }
 
     /**
@@ -35,8 +33,8 @@ class TommyPage extends Page {
         await (await this.btnCloseCookies).click();
     }
 
-    async clickAanmelden() {
-        await (await this.btnAanmelden).click();
+    async clickLogin() {
+        await (await this.btnLogin).click();
     }
 
     /**
