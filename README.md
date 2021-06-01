@@ -27,6 +27,7 @@ This assignment is developed in Typescript with BDD (Cucumber) and WebdriverIO.
 ## INSTALLATION
 1. NodeJS (Tested with v14.17.0 LTS) [https://nodejs.org/en/]
 2. Java JDK (version: 1.8) [https://www.oracle.com/java/technologies/javase-downloads.html#JDK8]
+3. OPTIONAL: Docker installation - [https://www.docker.com/get-started]
 
 ### PRE-REQUISITES
 1. Clone the project by: <br> `git clone https://github.com/hiddevisser/pvh_tech_assesment_jp571.git`
