@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "div[class=\"overview__items\"] > a:nth-child(3) > h3"
-}

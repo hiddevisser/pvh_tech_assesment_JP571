@@ -41,11 +41,15 @@ The project uses the allure reporting capabilities, after the test execution you
 
 ## IMPROVEMENTS
 For future development, I would like to add the following functionality:<br>
-* [ ] Docker implementation
+* [X] Docker implementation
+* [ ] Docker implementation using Selenium Grid
+* [ ] Support on running headless
 * [ ] Add screenshot on failure for allure reporting
 * [ ] Video recording of the test execution
 * [ ] Performance metrics (using tick stack)
 * [ ] Configuring the pipeline (un-attended test execution)
 
-
-##
+## KNOWN ISSUES
+* ~~Accepting the cookies seems to work only for the first test~~
+* Headless is not supported, seems to have issues with accepting the cookies
+* Docker is currently out of support due to the tests failing on accepting the cookies
