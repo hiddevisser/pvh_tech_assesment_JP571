@@ -108,4 +108,5 @@ reports
 allure-report
 allure-results
 package-lock.json
+.iml
 
